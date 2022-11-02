@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
 body{
     color: #565C7E;
 }
@@ -8,13 +15,19 @@ body{
     font-style: bold;
 }
 
+
+
+
+/* <!-- navbar --> */
 hr{
     margin: 0 auto;
     width: 40%;
     height:5%;
     background-color: #565C7E;
 }
-/* خط براءة ونوعو */
+
+
+
 #braa{
     font-size:300%;
     font-family: 'Sacramento', cursive;
@@ -36,13 +49,7 @@ hr{
 }
 
 /* تغيير وزن خطوط الناف بار  */
-#allnav{
-    /* font-weight: bold; */
-}
 
-.direct{
-
-}
 
 #show{
     background-color:#F4F4F4;
@@ -52,30 +59,72 @@ hr{
     color: #656a82;
 }
 
-#educa{
-    width: 100%;
-    height: 30vh;
-    background-color: #565C7E;
-
-}
-/* حجم كلمة التعليم */
-
-#edu{
-    color:#565C7E;
+#calaction{
+   background-color: #f8abbe;
+   color: #565C7E;
+   font-weight: 700;
 }
 
-.eduback{
-    /* margin-top: -20%; */
-    margin: -15% auto 0 auto;
-    width: 90%;
-    height: 100vh;
-    padding: 0px 13%;
+.ta3llem3{
+    margin: -2% auto;
+    display: grid;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(4,1fr);
+    width: 80%;
     box-shadow: 0px 2px 20px 5px rgba(0, 0, 0,0.19);
 }
+
+.histo1{font-size: x-large;}
+.histo2{font-size: x-large;}
+.his{font-size:large;}
+
+.headedu{
+    grid-column: 1/8;
+    grid-row: 1/2;
+    /* background-color: #656a82; */
+    text-align: center;
+    font-size:300%;
+    font-weight: 700;
+}
+.ehi{
+    margin: 0 auto;
+    
+}
+
+.orange{
+    grid-column: 1/2;
+    grid-row: 2/2; 
+}
+
+.histo1{
+    grid-column: 2/5;
+    grid-row: 2/2;
+}
+
+
+
+.univers{
+   margin-top: -25%;
+    grid-column: 1/2;
+    grid-row: 4/4;
+}
+
+.histo2{
+   margin-top: -10%;
+    grid-column:2/5;
+    grid-row: 4/4;
+}
+.hat{
+    grid-column: 5/8;
+    grid-row: 2/5;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 #proback{
     background-color: #565C7E;
@@ -86,10 +135,10 @@ hr{
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2),0 6px 20px 0 rgba(0, 0, 0,0.19)
 }
-.border-dark{
-    color: aqua
-}
 
+.formore{
+    background-color: #565C7E;
+}
 
 .expert{
     width: 70%;
@@ -110,7 +159,7 @@ hr{
 .expert > article img{
     width: 40%;
     background-color: white;
-    border: 10px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     padding: 4%;
     shape-outside: border-box;
     border-radius: 50%;
@@ -125,6 +174,8 @@ hr{
 
 .nas button{
     background-color:white;
+    color: #de7a93;
+    font-weight: 900;
     border-radius: 20px;
     padding: 2%;
     padding-right: 20%;
@@ -162,8 +213,6 @@ hr{
 
 
 /* من هون */
-
-
 .skills_section{
     /* margin-top: -20%; */
     margin: 4% auto 0 auto;
@@ -241,28 +290,124 @@ hr{
 
 .skill_bar .bar .Presnts{
     width: 70%;
+} 
+
+
+a{
+    text-decoration: none;
 }
 
 
+.white{
+    color: white;
+}
 
 
+.Conimg{
+    background-color: #565C7E;
+    height: 20vh;
+    margin: 0 auto;
+    display: grid;
+    color: white;
+    grid-template-columns:repeat(5 , 1fr); 
+    grid-template-rows: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+    justify-self:center;
+  
+}
+
+.contac{
+    margin: 0 auto;
+    grid-column: 3/4;
+    grid-row: 2/2;
+
+}
+
+.contex{
+    grid-column: 2/5;
+    grid-row: 3/3;
+    align-items: center;
+    justify-self:center;
+    margin: 0 auto;
+
+}
+
+.cont{
+    width: 50%;
+   
+}
 
 
+.coppy{
+    color: #f8abbe;
+}
 
- @media (max-width: 768px){
+
+@media (min-width:576px) and (max-width: 768px){
+   
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+       }
+       #show{
+        margin-top: 2%;
+       }
+       #nameshow{
+        padding-top: 30%;
+        font-size: 150%;
+        margin: 0 auto;
+       }
+
+       #job{
+        font-size: 100%;
+
+       }
+       .headedu{
+        font-size: 100%;
+       }
+
+       .ehi > span{
+        font-size: 80% !important;
+       }
+    .orange{
+        width: 25%;
+    }
+
+    .univers{
+        width: 25%;
+    }
+       }
+
+
+ @media (max-width: 766px){
+    
     .expert{
         grid-template-columns: repeat(2,1fr);
     }
+   
+
+   
  }
 
-@media (max-width: 500px){
+@media (max-width: 576px){
     .expert{
         grid-template-columns: repeat(1,1fr);
     }
     .expert > article{
         text-align: center;
     }
+    
+    #show{
+
+    }
+
+
 }
+
+
+
 
         
     
